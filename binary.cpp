@@ -1,0 +1,21 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int num;
+    cout<<"enter the num: ";
+    cin>>num;
+    unsigned int mask=32768;   
+cout<<"Binary Eqivalent :"; 
+ 
+while(mask > 0)
+   {
+   if((num & mask) == 0 )
+         cout<<"0";
+   else
+         cout<<"1";
+  mask = mask >> 1 ;  // Right Shift
+   }
+   
+   
+}
